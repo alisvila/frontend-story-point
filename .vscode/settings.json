@@ -1,0 +1,16 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.wordWrap": "on",
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
+}
