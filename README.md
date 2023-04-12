@@ -1,5 +1,41 @@
 # Frontend base story point estimation
 
+| task                                       | story point |
+| ------------------------------------------ | ----------- |
+| initialize and config project dependencies | 1           |
+| pages mockup                               | 2           |
+| create services and fake api               | 1           |
+| Design and Implement project layout        | 1           |
+| Implement a login page                     | 1           |
+| create card component for each product     | 1           |
+| Implement products page                    | 1           |
+| init testing dependencies and utils        | 2           |
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Also runs a fake api on port 3004 for easier development
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run server`
+
+Only start json-server api on port 3004
+
+### `npm run coverage`
+
+Display code test coverage in a tabble
+
+---
+
 A small project for estimation of base story point for one frontend developer with React and its unit tests could be a simple e-commerce website that allows users to browse and purchase products. The project could include the following features:
 
 - Product Catalog: Users can view a list of products, including the product name, image, description, and price.

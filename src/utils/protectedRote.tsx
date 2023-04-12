@@ -18,7 +18,7 @@ export default function ProtectedRoute({
     roles.includes('All') || roles.includes(role) ? true : false;
 
   if (!isLoggedIn || checkRole) {
-    return <Navigate to={`/login?next=${next}`} replace />;
+    return <Navigate to={'/login'} replace />;
   }
 
   return children;

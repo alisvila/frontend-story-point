@@ -69,5 +69,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/reportWebVitals.ts",
+      "<rootDir>/src/index.tsx"
+    ]
   }
 }
