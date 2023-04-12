@@ -1,12 +1,14 @@
 import React from 'react';
-import { Alert, Box, Typography } from '@mui/material';
+import { useQuery } from 'react-query';
+import { getProducts } from 'src/utils/api';
 import BaseProducts from 'types/Products';
+import { Alert, Box, Stack, Typography } from '@mui/material';
 import Cart from 'src/components/ui/cardWrapper';
 import PannelWrapper from 'src/pages/layout/pannel';
 import { useProduct } from 'src/hooks/useProducts';
 
 export default function ProductsPage() {
-  const { data, error } = useProduct();
+  const { data, error, isFetching } = useProduct();
   const products: BaseProducts[] = data?.products;
 
   return (
@@ -21,6 +23,16 @@ export default function ProductsPage() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam dui
         lacinia ornare maximus. Duis dictum nibh sed lorem posuere venenatis.
       </Typography>
+      <Stack sx={{ width: '100%' }} spacing={2}>
+        {error && (
+          <Alert severity="error">
+            Something bad is happening please try again later.
+          </Alert>
+        )}
+        {isFetching && (
+          <Alert severity="info">Loading data please wait...</Alert>
+        )}
+      </Stack>
       <Box
         sx={{
           display: 'flex',
@@ -31,11 +43,6 @@ export default function ProductsPage() {
           pt: 4,
         }}
       >
-        {error && (
-          <Alert severity="error">
-            something bad is happening please try again later.
-          </Alert>
-        )}
         {products?.map((product: BaseProducts) => (
           <Cart
             key={product.id}

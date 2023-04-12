@@ -14,6 +14,7 @@ export default function LoginPage() {
         <Box>
           <Grid container component="main">
             <Grid
+              data-testid="back image"
               item
               xs={false}
               sm={4}

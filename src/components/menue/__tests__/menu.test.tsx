@@ -1,9 +1,18 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import Navbar from '..';
-test('should contain a logo within navbar', () => {
-  render(<Navbar />);
 
-  const logo = screen.getAllByText(/logo/i);
+describe('Navbar component', () => {
+  it('should render without an error', () => {
+    render(<Navbar />);
+  });
 
-  expect(logo).toHaveLength(2);
+  it('should have logo and avatar', () => {
+    render(<Navbar />);
+
+    const avatar = screen.getByAltText(/avatar/i);
+    const logo = screen.getAllByText(/logo/i);
+
+    expect(logo).toHaveLength(2);
+    expect(avatar).toBeInTheDocument();
+  });
 });
