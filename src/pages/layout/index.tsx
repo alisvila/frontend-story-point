@@ -1,7 +1,9 @@
 import React, { ReactNode } from 'react';
+
 import { Box } from '@mui/material';
 import { BoxMain, DashboardLayoutRoot } from './layout.styled';
-import ComponentWithChild from 'types/Component';
+
+import type ComponentWithChild from 'types/Component';
 
 export default function DashLayout({ children }: ComponentWithChild) {
   return (

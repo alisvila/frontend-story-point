@@ -5,7 +5,6 @@ import { Navigate } from 'react-router-dom';
 export default function ProtectedRoute({
   children,
   roles,
-  next,
 }: {
   children: JSX.Element;
   roles: Array<string>;

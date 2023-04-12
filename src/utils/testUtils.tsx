@@ -1,6 +1,6 @@
+import { ReactElement } from 'react';
 import { ThemeProvider } from '@mui/material';
 import { render } from '@testing-library/react';
-import { ReactElement } from 'react';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import theme from 'src/theme';
 

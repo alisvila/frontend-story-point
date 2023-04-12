@@ -1,7 +1,7 @@
 const BASE_URL = 'http://localhost:3004';
 
 import BaseProducts from 'src/types/Products';
-import User from 'types/User';
+import type User from 'types/User';
 
 export const getProducts = async (): Promise<{ products: BaseProducts[] }> => {
   return fetch(`${BASE_URL}/products`).then((res) => res.json());

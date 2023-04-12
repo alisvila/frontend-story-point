@@ -1,6 +1,6 @@
 import React from 'react';
+
 import {
-  Box,
   Button,
   Card,
   CardActionArea,
@@ -9,7 +9,8 @@ import {
   CardMedia,
   Typography,
 } from '@mui/material';
-import BaseProducts from 'src/types/Products';
+
+import type BaseProducts from 'src/types/Products';
 
 export default function cardWrapper(props: BaseProducts) {
   const { image, name, description, price } = props;
