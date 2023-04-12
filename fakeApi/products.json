@@ -1,26 +1,25 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Product 1",
-        "description": "This is the first product",
-        "price": 10.99,
-        "image": "https://example.com/images/product1.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Product 2",
-        "description": "This is the second product",
-        "price": 20.99,
-        "image": "https://example.com/images/product2.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Product 3",
-        "description": "This is the third product",
-        "price": 30.99,
-        "image": "https://example.com/images/product3.jpg"
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam dui lacinia ornare maximus. Duis dictum nibh sed lorem posuere venenatis.",
+      "price": 10.99,
+      "image": "https://img.freepik.com/free-vector/graphic-design-geometric-wallpaper_52683-34399.jpg?w=1380&t=st=1681248837~exp=1681249437~hmac=304d1768f1914f40d976b91da32fe28b7c26eb399d63c657e4e38c17632377ed"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam dui lacinia ornare maximus. Duis dictum nibh sed lorem posuere venenatis.",
+      "price": 20.99,
+      "image": "https://img.freepik.com/free-vector/hand-drawn-doodle-background_23-2149974130.jpg?w=1380&t=st=1681248852~exp=1681249452~hmac=33a20ebfb58dea33bb13df79e9516e7ab45bceaa5ff42bb1f4654172976f77c0"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam dui lacinia ornare maximus. Duis dictum nibh sed lorem posuere venenatis.",
+      "price": 30.99,
+      "image": "https://img.freepik.com/free-vector/flat-design-mountain-landscape_23-2149172160.jpg?w=1380&t=st=1681248859~exp=1681249459~hmac=1a267ed4e0c6ccf9814ad97e528078e5571298b49c5e59e890d1ae6b6f976362"
+    }
+  ]
+}

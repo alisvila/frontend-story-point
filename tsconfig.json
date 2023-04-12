@@ -21,9 +21,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@core/*": ["src/core/*"],
-      "@components/*" : ["src/components/*"],
-      "@types/*" : ["src/types/*"]
+      "components/*" : ["src/components/*"],
+      "types/*" : ["src/types/*"]
     }
   },
   "include": ["src", "public/icons"],
