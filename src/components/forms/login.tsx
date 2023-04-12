@@ -48,7 +48,7 @@ export default function LoginForm() {
         mx: { sm: 6, xs: 6, lg: 10 },
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         position: 'relative',
       }}
     >
@@ -56,8 +56,10 @@ export default function LoginForm() {
         <LockOutlined />
       </Avatar>
       <Typography component="h1" variant="h4" data-testid="login-title">
-        Sign in
+        Welcome Back.
       </Typography>
+      <Typography>anything will work. we don't discourage anyone.</Typography>
+
       <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
         <TextField
           margin="normal"
