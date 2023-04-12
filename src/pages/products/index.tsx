@@ -1,11 +1,9 @@
 import React from 'react';
-import { useQuery } from 'react-query';
-import { getProducts } from 'src/utils/api';
-import BaseProducts from 'types/Products';
 import { Alert, Box, Typography } from '@mui/material';
+import BaseProducts from 'types/Products';
 import Cart from 'src/components/ui/cardWrapper';
 import PannelWrapper from 'src/pages/layout/pannel';
-import { useProduct } from './useProducts';
+import { useProduct } from 'src/hooks/useProducts';
 
 export default function ProductsPage() {
   const { data, error } = useProduct();
