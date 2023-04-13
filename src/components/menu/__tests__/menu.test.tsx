@@ -1,4 +1,4 @@
-import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Navbar from '..';
 
 describe('Navbar component', () => {

@@ -1,4 +1,4 @@
-import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { useProduct } from 'src/hooks/useProducts';
 import ProductsPage from '..';
 
@@ -31,7 +31,7 @@ describe('ProductPage component', () => {
       isError: true,
       error: { message: 'something bad is happening please try again later' },
     }));
-    const { getByText, queryByText } = render(<ProductsPage />);
+    const { getByText } = render(<ProductsPage />);
 
     expect(
       getByText(/something bad is happening please try again later/i)
@@ -43,7 +43,7 @@ describe('ProductPage component', () => {
       isFetching: true,
       isError: false,
     }));
-    const { getByText, queryByText } = render(<ProductsPage />);
+    const { getByText } = render(<ProductsPage />);
 
     expect(getByText(/Loading data please wait/i)).toBeVisible();
   });

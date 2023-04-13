@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Alert, Box, Stack, Typography } from '@mui/material';
+import { Alert, Box, Container, Grid, Stack, Typography } from '@mui/material';
 import Cart from 'src/components/ui/cardWrapper';
 import PannelWrapper from 'src/pages/layout/pannel';
 import { useProduct } from 'src/hooks/useProducts';
@@ -33,27 +33,20 @@ export default function ProductsPage() {
           <Alert severity="info">Loading data please wait...</Alert>
         )}
       </Stack>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: { xs: 'column', sm: 'row', md: 'row' },
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          gap: 4,
-          pt: 4,
-        }}
-      >
-        {products?.map((product: BaseProducts) => (
-          <Cart
-            key={product.id}
-            image={product.image}
-            id={product.id}
-            name={product.name}
-            description={product.description}
-            price={product.price}
-          />
-        ))}
-      </Box>
+      <Container sx={{ py: 6 }}>
+        <Grid container spacing={6}>
+          {products?.map((product: BaseProducts) => (
+            <Cart
+              key={product.id}
+              image={product.image}
+              id={product.id}
+              name={product.name}
+              description={product.description}
+              price={product.price}
+            />
+          ))}
+        </Grid>
+      </Container>
     </PannelWrapper>
   );
 }

@@ -1,12 +1,6 @@
-import { render, screen, cleanup, fireEvent } from 'src/utils/testUtils';
+import { render, screen, fireEvent } from 'src/utils/testUtils';
 import LoginForm from '../login';
-import {
-  RouterProvider,
-  createMemoryRouter,
-  BrowserRouter,
-} from 'react-router-dom';
-import { createUser } from 'src/utils/api';
-import User from 'types/User';
+import { BrowserRouter } from 'react-router-dom';
 
 jest.mock('src/utils/api');
 

@@ -1,17 +1,5 @@
-import {
-  render,
-  screen,
-  cleanup,
-  fireEvent,
-  waitFor,
-} from 'src/utils/testUtils';
-import { createUser } from 'src/utils/api';
-import {
-  BrowserRouter,
-  RouterProvider,
-  createMemoryRouter,
-  useNavigate,
-} from 'react-router-dom';
+import { render, waitFor } from 'src/utils/testUtils';
+import { RouterProvider, createMemoryRouter } from 'react-router-dom';
 import ProtectedRoute from '../protectedRote';
 
 jest.mock('src/utils/api');
